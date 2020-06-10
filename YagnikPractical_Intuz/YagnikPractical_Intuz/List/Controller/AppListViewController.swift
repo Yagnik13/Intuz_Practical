@@ -73,6 +73,10 @@ extension AppListViewController {
                 return
             }
             
+            if self.arrUsers.count > 0 {
+                self.arrUsers.removeAll()
+            }
+            
             for obj in people {
                 let fname = obj.value(forKey: "firstname") as! String
                 let lname = obj.value(forKey: "lastname") as! String
