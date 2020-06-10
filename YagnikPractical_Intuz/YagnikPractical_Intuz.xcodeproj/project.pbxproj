@@ -37,6 +37,10 @@
 		4D5E17E32490A6AA009AA3D8 /* WebServiceCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5E17E22490A6AA009AA3D8 /* WebServiceCall.swift */; };
 		4D5E17E62490A765009AA3D8 /* AddUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5E17E52490A765009AA3D8 /* AddUserModel.swift */; };
 		4D5E17E82490B237009AA3D8 /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5E17E72490B237009AA3D8 /* CustomTableCell.swift */; };
+		4D70A4172490BF4A009E5A7F /* WebAppsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70A4162490BF4A009E5A7F /* WebAppsTableCell.swift */; };
+		4D70A41A2490C142009E5A7F /* AppListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70A4192490C142009E5A7F /* AppListModel.swift */; };
+		4DE5814E2490B9A80002C11C /* ApplicationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE5814D2490B9A80002C11C /* ApplicationListViewController.swift */; };
+		4DE581522490BAAC0002C11C /* ApplicationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE581512490BAAC0002C11C /* ApplicationListViewModel.swift */; };
 		B9B68914784807D6BB72BE0D /* Pods_YagnikPractical_Intuz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34DEEB52C7C0CE15ABDFED7 /* Pods_YagnikPractical_Intuz.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +77,10 @@
 		4D5E17E22490A6AA009AA3D8 /* WebServiceCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceCall.swift; sourceTree = "<group>"; };
 		4D5E17E52490A765009AA3D8 /* AddUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserModel.swift; sourceTree = "<group>"; };
 		4D5E17E72490B237009AA3D8 /* CustomTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableCell.swift; sourceTree = "<group>"; };
+		4D70A4162490BF4A009E5A7F /* WebAppsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAppsTableCell.swift; sourceTree = "<group>"; };
+		4D70A4192490C142009E5A7F /* AppListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListModel.swift; sourceTree = "<group>"; };
+		4DE5814D2490B9A80002C11C /* ApplicationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationListViewController.swift; sourceTree = "<group>"; };
+		4DE581512490BAAC0002C11C /* ApplicationListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationListViewModel.swift; sourceTree = "<group>"; };
 		C1E54D19568ECDAF833F6670 /* Pods-YagnikPractical_Intuz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YagnikPractical_Intuz.debug.xcconfig"; path = "Target Support Files/Pods-YagnikPractical_Intuz/Pods-YagnikPractical_Intuz.debug.xcconfig"; sourceTree = "<group>"; };
 		D34DEEB52C7C0CE15ABDFED7 /* Pods_YagnikPractical_Intuz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YagnikPractical_Intuz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC05F5C702F79C8563599F53 /* Pods-YagnikPractical_Intuz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YagnikPractical_Intuz.release.xcconfig"; path = "Target Support Files/Pods-YagnikPractical_Intuz/Pods-YagnikPractical_Intuz.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,8 +130,9 @@
 				4D5E1759249090B9009AA3D8 /* AppDelegate.swift */,
 				4D5E175B249090B9009AA3D8 /* SceneDelegate.swift */,
 				4D5E1770249097F7009AA3D8 /* Login */,
-				4D5E17DA24909C6B009AA3D8 /* App List */,
+				4D5E17DA24909C6B009AA3D8 /* List */,
 				4D5E17DE2490A5F1009AA3D8 /* AddUser */,
+				4DE5814C2490B95B0002C11C /* ApplicationList */,
 				4D5E17732490984D009AA3D8 /* View */,
 				4D5E1765249090BB009AA3D8 /* Assets.xcassets */,
 				4D5E1775249099AE009AA3D8 /* Utils */,
@@ -169,7 +178,6 @@
 		4D5E1775249099AE009AA3D8 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				4D5E17E12490A6AA009AA3D8 /* WebServices */,
 				4D5E177D249099AF009AA3D8 /* Extensions */,
 				4D5E17AF249099AF009AA3D8 /* Utli Functions */,
 			);
@@ -312,13 +320,13 @@
 			path = "Utli Functions";
 			sourceTree = "<group>";
 		};
-		4D5E17DA24909C6B009AA3D8 /* App List */ = {
+		4D5E17DA24909C6B009AA3D8 /* List */ = {
 			isa = PBXGroup;
 			children = (
 				4D5E17E92490B2C8009AA3D8 /* View */,
 				4D5E17DD24909C92009AA3D8 /* Controller */,
 			);
-			path = "App List";
+			path = List;
 			sourceTree = "<group>";
 		};
 		4D5E17DD24909C92009AA3D8 /* Controller */ = {
@@ -333,7 +341,7 @@
 			isa = PBXGroup;
 			children = (
 				4D5E17E42490A753009AA3D8 /* Model */,
-				4D5E17DF2490A615009AA3D8 /* AddUserViewController.swift */,
+				4DE5814B2490B9350002C11C /* Controller */,
 			);
 			path = AddUser;
 			sourceTree = "<group>";
@@ -360,6 +368,58 @@
 				4D5E17E72490B237009AA3D8 /* CustomTableCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		4D70A4152490BF1E009E5A7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D70A4162490BF4A009E5A7F /* WebAppsTableCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D70A4182490C132009E5A7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D70A4192490C142009E5A7F /* AppListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4DE5814B2490B9350002C11C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4D5E17DF2490A615009AA3D8 /* AddUserViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4DE5814C2490B95B0002C11C /* ApplicationList */ = {
+			isa = PBXGroup;
+			children = (
+				4D70A4182490C132009E5A7F /* Model */,
+				4D70A4152490BF1E009E5A7F /* View */,
+				4D5E17E12490A6AA009AA3D8 /* WebServices */,
+				4DE581502490BA1B0002C11C /* ViewModel */,
+				4DE5814F2490BA0F0002C11C /* Controller */,
+			);
+			path = ApplicationList;
+			sourceTree = "<group>";
+		};
+		4DE5814F2490BA0F0002C11C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4DE5814D2490B9A80002C11C /* ApplicationListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4DE581502490BA1B0002C11C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4DE581512490BAAC0002C11C /* ApplicationListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		933A2494A3FEED918015549F /* Pods */ = {
@@ -505,14 +565,18 @@
 				4D5E17DC24909C8E009AA3D8 /* AppListViewController.swift in Sources */,
 				4D5E17C0249099AF009AA3D8 /* Extension_UIViewController.swift in Sources */,
 				4D5E17BA249099AF009AA3D8 /* Extension_String.swift in Sources */,
+				4D70A4172490BF4A009E5A7F /* WebAppsTableCell.swift in Sources */,
 				4D5E17B8249099AF009AA3D8 /* Extension_UILabel.swift in Sources */,
 				4D5E17BD249099AF009AA3D8 /* Extension_date.swift in Sources */,
+				4D70A41A2490C142009E5A7F /* AppListModel.swift in Sources */,
 				4D5E175C249090B9009AA3D8 /* SceneDelegate.swift in Sources */,
 				4D5E17D8249099AF009AA3D8 /* Globals.swift in Sources */,
 				4D5E17C5249099AF009AA3D8 /* Extension_UITableView.swift in Sources */,
 				4D5E17D6249099AF009AA3D8 /* Validations.swift in Sources */,
+				4DE5814E2490B9A80002C11C /* ApplicationListViewController.swift in Sources */,
 				4D5E17E32490A6AA009AA3D8 /* WebServiceCall.swift in Sources */,
 				4D5E17B9249099AF009AA3D8 /* Extension_UIImage.swift in Sources */,
+				4DE581522490BAAC0002C11C /* ApplicationListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

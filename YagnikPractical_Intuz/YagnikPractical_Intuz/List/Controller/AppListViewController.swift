@@ -29,6 +29,16 @@ class AppListViewController: UIViewController {
         fetchDetailFromCoreData()
     }
     
+    @IBAction func appsButtonAction(_ sender: Any) {
+        pushToWebApplicationViewController()
+    }
+    
+    func pushToWebApplicationViewController() {
+        guard let controller = mainStoryboard.instantiateViewController(withIdentifier:String(describing:  ApplicationListViewController.self)) as? ApplicationListViewController else {
+            return }
+        self.navigationController?.pushViewController(controller, animated: false)
+    }
+    
 }
 
 //MARK:- Data Source Delegate methods

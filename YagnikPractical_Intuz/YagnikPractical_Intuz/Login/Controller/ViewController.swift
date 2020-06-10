@@ -71,10 +71,11 @@ class ViewController: UIViewController {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "AppListViewController") as! AppListViewController
         let navVC = UINavigationController(rootViewController: vc)
         navVC.modalPresentationStyle = .fullScreen
-//        navVC.navigationBar.tintColor = .black
-//        navVC.navigationBar.backgroundColor = .black
-//        navVC.navigationController?.navigationBar.isTranslucent = true
+        navVC.navigationBar.tintColor = .black
+        navVC.navigationBar.backgroundColor = .black
+        navVC.navigationController?.navigationBar.isTranslucent = true
         self.present(navVC, animated: true, completion: nil)
     }
+    
 }
 
